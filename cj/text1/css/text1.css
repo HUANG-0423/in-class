@@ -1,0 +1,28 @@
+  * {
+    background-color: rgb(228, 186, 15) !important;
+  }
+
+  div {
+    background-color: aqua;
+  }
+
+  /* id */
+  #id-test {
+    width: 400px;
+    height: 600px;
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-position: 30px 100px;
+    background-size: contain;
+  }
+
+  /* class */
+
+ body .class-test {
+    width: 400px;
+    height: 600px;
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-position: 30px 100px;
+    background-size: contain;
+  }
