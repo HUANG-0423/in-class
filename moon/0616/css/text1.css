@@ -1,0 +1,29 @@
+
+    *{background-color: aqua !important;
+    }
+
+
+    div {
+        background-color: aqua;
+    }
+
+
+    #id-test {
+        width: 400px;
+        height: 600px;
+        ;
+        background-image: url('https://4.bp.blogspot.com/-2g_0nFrfkb0/Vs6o1J82r5I/AAAAAAAAusg/sQTdLYYW5gU/s640/20150108085857943.jpg');
+        background-repeat: no-repeat;
+        background-position: 100px 30px;
+        background-size: contain;
+    }
+
+    body .class-test {
+        width: 400px;
+        height: 600px;
+        ;
+        background-image: url('https://4.bp.blogspot.com/-2g_0nFrfkb0/Vs6o1J82r5I/AAAAAAAAusg/sQTdLYYW5gU/s640/20150108085857943.jpg');
+        background-repeat: no-repeat;
+        background-position: 100px 30px;
+        background-size: contain;
+    }
