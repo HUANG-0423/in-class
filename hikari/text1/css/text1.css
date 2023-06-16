@@ -1,0 +1,30 @@
+    * {
+        background-color: aquamarine !important;
+    }
+
+    div {
+        background-color: blueviolet;
+    }
+
+
+
+    /* id */
+    #id-test {
+        width: 400px;
+        height: 600px;
+        background-image: url('https://th.bing.com/th/id/OIP.tdt7SUrRrFRGHvQKEk0zYwHaFj?pid=ImgDet&rs=1');
+        background-repeat: no-repeat;
+        background-position: 30px 30px;
+        background-size: contain;
+    }
+
+    /* class */
+
+ body .class-test {
+        width: 400px;
+        height: 600px;
+        background-image: url('https://th.bing.com/th/id/OIP.tdt7SUrRrFRGHvQKEk0zYwHaFj?pid=ImgDet&rs=1');
+        background-repeat: no-repeat;
+        background-position: 30px 30px;
+        background-size: contain;
+    }
