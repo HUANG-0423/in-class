@@ -1,0 +1,12 @@
+*{color:pink;}
+    
+    
+    .link-h1{color: rgb(69, 115, 111) !important;
+      font-size:133px;
+      background-color:brown ;} 
+
+    .special{color:red;}
+    #mine-id{color:green;}
+
+
+/* important>行那樣式>id>class */
