@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.all {
+  width: 100%;
+  height: 56px; /* 之後可能會刪掉 */
+  display: flex;
+  padding: 5px 10px;
+  background-color: aqua;
+}
+.logo-and-search {
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.search {
+  max-width: 250px;
+  border-radius: 32px;
+  border: 0px;
+  background-color: rgb(237, 243, 243);
+  width: calc(100% - 50px);
+  height: 35px;
+  margin-left: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search-icon {
+  height: 20px;
+}
+#search-input {
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 32px;
+  font-size: 18px;
+  border: 0px;
+  background-color: rgb(237, 243, 243);
+}
+
+.main-page {
+  /* width: 500px; */
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(136, 37, 147);
+}
+
+.home {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/home-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cvideo {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/yin-yang-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.shop {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/store-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.social {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/user-circle-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.game {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/gamepad-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon {
+  margin-left: 40px;
+}
+
+.personal-information {
+  width: calc(100% - 500px);
+  height: 100%;
+  background-color: rgb(82, 129, 129);
+}
+.create {
+}
+.messager {
+}
+.event {
+}
+.personal-img {
+}
