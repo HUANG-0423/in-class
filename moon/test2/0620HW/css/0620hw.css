@@ -1,107 +1,110 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
- }
- .logo{
-    width: 40px;
-    height: 40px;
-    margin: 20px;
-    float: left;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.all {
+  width: 3000px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  float: left;
 }
 
-.searchbar{
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 0px;
-    padding: 10px;
-    padding-right: 0px;
-    padding-bottom: 40px;
-    background-color: rgb(188, 188, 188);
-    float: left;
+.searchbar {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding: 10px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  background-color: rgb(188, 188, 188);
+  float: left;
 }
 
-.searchFacebook{
-    width: 230px;
-    height: 40px;
-    font-size: 18px;
-    margin-top:20px;
-    margin-left: 0px;
-    padding: 10px;
-    padding-left: 3px;
-    padding-bottom: 40px;
-    background-color: rgb(188, 188, 188);
-    float: left;
+.searchFacebook {
+  width: 230px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 10px;
+  padding-left: 3px;
+  padding-bottom: 40px;
+  background-color: rgb(188, 188, 188);
+  float: left;
 }
 
-.home{
-    width: 40px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:200px;
-    float: left;
+.home {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 200px;
+  float: left;
 }
 
-.reels{
-    width: 40px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:80px;
-    float: left;
+.reels {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  float: left;
 }
 
-.store{
-    width: 40px;
-    margin-top:20px;
-    margin-left:80px;
-    float: left;
+.store {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  float: left;
 }
 
-.group{
-    width: 40px;
-    margin-top:20px;
-    margin-left:80px;
-    float: left;
+.group {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  float: left;
 }
 
-.game{
-    width: 40px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:80px;
-    float: left;
+.game {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 80px;
+  float: left;
 }
 
-.plus{
-    width: 30px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:350px;
-    float: left;
+.plus {
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 350px;
+  float: left;
 }
 
-.message{
-    width: 30px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:40px;
-    float: left;
+.message {
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
 }
 
-.notic{
-    width: 30px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:40px;
-    float: left;
+.notic {
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
 }
 
-.user{
-    width: 30px;
-    height: 40px;
-    margin-top:20px;
-    margin-left:40px;
-    float: left;
+.user {
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
 }
