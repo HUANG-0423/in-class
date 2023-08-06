@@ -105,8 +105,20 @@
 
 .personal-information {
   width: calc(100% - 500px);
+  min-width: 200px;
   height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
   background-color: rgb(82, 129, 129);
+}
+
+.personal-information div {
+  width: 40px;
+  height: 40px;
+  margin: 0px 2px;
+  border-radius: 100%;
+  background-color: azure;
 }
 .create {
 }
