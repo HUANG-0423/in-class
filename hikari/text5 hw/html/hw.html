@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/hw.css">
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+    <div class="May2023">
+        <h1>May 2023</h1>
+    </div>
+    <div class="date">
+        <table>
+            <tr id="calendar-row"></tr>
+        </table>
+    </div>
+    <script>
+        function MayCalendar(){
+            const daysInMay=31;
+            const calendarRow = document.getElementById("calendar-row");
+            const startDay = 1;
+            let dayCounter = 1;
+            for (let week = 0; dayCounter <= daysInMay; week++) {
+                const weekRow = document.createElement("tr");
+
+                for (let dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++) {
+                    const cell = document.createElement("td");
+
+                    if ((week === 0 && dayOfWeek < startDay) || dayCounter > daysInMay) {
+                        cell.textContent = "";
+                    } else {
+                        cell.textContent = dayCounter;
+                        dayCounter++;
+                    }
+
+                    weekRow.appendChild(cell);
+                }
+
+                calendarRow.appendChild(weekRow);
+            }
+        }
+        MayCalendar();
+
+    </script>
+
+    
+</body>
+</html>
