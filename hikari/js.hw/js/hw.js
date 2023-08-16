@@ -14,3 +14,23 @@ for (let i = 1; i <= 33; i++) {
         }
     }
 }
+
+function isLeapYear(year){
+    if(year%4==0){
+        isLeapYear = true
+        console.log(`${year}年是閏年`)
+    }
+    else{
+        isLeapYear = false
+        console.log(`${year}年不是閏年`)
+    }
+}
+const inputYear = parseInt(prompt("請輸入年份:"));
+if(!isNaN(inputYear%4==0)){
+    if(isLeapYear(inputYear)){
+    console.log(`${inputYear}年是閏年`)
+    }
+}
+else{
+    console.log(`${inputYear}年不是閏年`)
+}

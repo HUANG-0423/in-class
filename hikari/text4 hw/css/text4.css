@@ -1,71 +1,160 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-nav{
+
+nav {
     width: 100%;
-    padding: 0% 10%;
+    padding: 0% 10% 0% 15px;
     display: flex;
 }
-.nav-center{
-    width: 90%;
+
+.nav-left {
+    width: 80%;
 }
-.nav-right{
-    width: 10%;
-    display: flex;
-}
-.logo{
-    height: 200px;
+
+.logo {
+    height: 175px;
     background-image: url(../img/450x.webp);
-    background-position: center;
+    background-position: 650px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.computer{
+
+.nav-right {
+    width: 20%;
     display: flex;
 }
-.link{
+
+.computer {
+    display: flex;
+}
+
+.link {
     height: 50px;
 }
-.link-text{
-    margin-top: 4px;
-    padding: 0px 15px;
+
+.link-text {
+    margin-top: 10px;
+    padding: 0px 25px;
     white-space: nowrap;
 }
-.search{
-    margin-top: 4px;
-    padding: 0px 15px;
+
+.search {
+    margin-top: 10px;
+    padding: 0px 25px;
     width: 20px;
     height: 20px;
     background-image: url(../img/search-solid.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.comment{
-    margin-top: 4px;
-    padding: 0px 15px;
+
+.comment {
+    margin-top: 10px;
+    padding: 0px 25px;
     width: 20px;
     height: 20px;
     background-image: url(../img/comment-solid.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.user{
-    margin-top: 4px;
-    padding: 0px 15px;
+
+.user {
+    margin-top: 10px;
+    padding: 0px 25px;
     width: 20px;
     height: 20px;
     background-image: url(../img/user-solid.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.shopping{
-    margin-top: 4px;
-    padding: 0px 15px;
+
+.shopping {
+    margin-top: 10px;
+    padding: 0px 25px;
     width: 20px;
     height: 20px;
     background-image: url(../img/shopping-bag-solid.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media(min-width:767px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+@media(max-width:767px) {
+    nav {
+        padding: 0px 10px;
+    }
+
+    .logo {
+        background-position: left;
+        height: 45px;
+        margin: 5px;
+        padding: 0px 15px;
+    }
+
+    .computer {
+        display: none;
+    }
+
+    .search-text {
+        margin-top: 20px;
+        padding: 0px 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/search-solid.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: auto;
+    }
+    .user-text {
+        margin-top: 20px;
+        padding: 0px 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/user-solid.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: auto;
+    }
+    .shopping-text {
+        margin-top: 20px;
+        padding: 0px 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/shopping-bag-solid.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: auto;
+    }
+    .bugar {
+        background-image: url('../img/bars-solid.svg');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 35px;
+        height: 25px;
+        margin: 15px;
+        margin-left: 25px;
+    }
+    .nav-mobile {
+        width: 100%;
+        padding: 0px 50px 0px 40px;
+        display: none;
+    }
+    
+    .nav-mobile-text {
+        text-align: center;
+        padding: 10px 0px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .nav-mobile-text:hover{
+        background-color: #f2f2f2;
+    }
 }
