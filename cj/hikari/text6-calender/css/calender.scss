@@ -38,18 +38,28 @@ $birthday: rgb(222, 8, 8);
       font-size: 20px;
     }
     .event {
+      display: block;
       position: absolute;
       bottom: 5px;
       left: 5px;
       font-size: 20px;
 
-      &::after {
+      &::before {
         content: '';
+        display: inline-block;
         width: 10px;
         height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
       }
-      &-meeting::after {
+      &-meeting::before {
         background-color: $meeting;
+      }
+      &-holiday::before {
+        background-color: $holiday;
+      }
+      &-birthday::before {
+        background-color: $birthday;
       }
     }
   }
