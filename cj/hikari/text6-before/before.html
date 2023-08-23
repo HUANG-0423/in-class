@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .block {
+    display: block;
+    /* 基本上這是所有div的預設條件，他將會佔據一整行，因此才被稱為區塊元素 */
+  }
+
+  .inline {
+    display: inline;
+    /* 他和span基本上是一樣的，他無法設定寬度，因為他的寬度就是裡面的素材有多大，他就多大，因此才被稱為行內元素 */
+  }
+
+  .inline-block {
+    display: block;
+    width: 50px;
+    /*可以自己設定寬度，但是他並不會像是block一樣佔據整行，他算是具有行內元素特色以及區塊元素特色的綜合體，常裳和before afer一起使用  */
+  }
+
+  .inline-block::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+  }
+</style>
+
+<body>
+  <div class="block">3</div>
+  <div class="inline">2</div>
+  <div class="inline">2</div>
+  <div class="inline-block">3</div>
+  <div class="inline-block">3</div>
+  <span>333</span>
+</body>
+
+</html>
