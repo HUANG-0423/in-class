@@ -1,0 +1,66 @@
+$header: #20d666;
+$headerText: white;
+$grayBorder: #ccc;
+$meeting: rgb(117, 36, 117);
+$holiday: #f2ca18;
+$birthday: rgb(222, 8, 8);
+
+.calender {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap; //只要允許就自動換行
+  margin: 0px auto;
+
+  // background-color: aqua;
+
+  &-header {
+    width: 100%;
+    padding: 10px;
+    background-color: $header;
+    text-align: center;
+    color: $headerText;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: '標楷體', Helvetica, sans-serif;
+  }
+  &-day {
+    width: calc(100% / 7);
+    height: 100px;
+    // width: calc(calc(100% / 7) - 2px);
+    border: 1px solid $grayBorder;
+    box-sizing: border-box;
+    position: relative;
+    span {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 20px;
+    }
+    .event {
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      font-size: 20px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      &-meeting::before {
+        background-color: $meeting;
+      }
+      &-holiday::before {
+        background-color: $holiday;
+      }
+      &-birthday::before {
+        background-color: $birthday;
+      }
+    }
+  }
+}
