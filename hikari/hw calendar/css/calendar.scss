@@ -1,0 +1,87 @@
+$header: #4cedfc;
+$headerText: white;
+$garyBorder: #ccc;
+$meeting: rgb(202, 56, 202);
+$holiday: #aaf639;
+$birthday: #4c8afc;
+$weekholiday: red;
+
+.calendar {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap; //只要允許就自動換行
+    margin: 0px auto;
+
+    &-header {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: $header;
+        color: $headerText;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: "標楷體", Helvetica, sans-serif;
+    }
+
+    &-day {
+        width: calc(100% / 7);
+        height: 100px;
+        border: $garyBorder solid 1px;
+        box-sizing: border-box;
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 20px;
+        }
+        .event {
+            position: absolute;
+            display: block;
+            bottom: 5px;
+            left: 5px;
+            font-size: 20px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+
+            &-meeting::before {
+                background-color: $meeting;
+            }
+
+            &-holiday::before {
+                background-color: $holiday;
+            }
+
+            &-birthday::before {
+                background-color: $birthday;
+            }
+        }
+    }
+    &-week {
+        width: calc(100% / 7);
+        height: 40px;
+        border: $garyBorder solid 1px;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: bold;
+
+        span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 20px;
+        }
+    }
+    &-weekholiday {
+        color: $weekholiday;
+    }
+}
